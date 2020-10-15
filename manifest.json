@@ -1,0 +1,16 @@
+{
+    "name": "RumahFilm",
+    "short_name": "Rumah Film",
+    "description": "All about Movie",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00897B",
+    "theme_color": "#00897B",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "1300x1300",
+            "type": "image/png"
+        }
+    ]
+}
