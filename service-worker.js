@@ -1,8 +1,10 @@
-const CACHE_NAME = "firstpwa-v1";
+const CACHE_NAME = "firstpwa-v3";
 
 var urlsToCache = [
     "/",
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
     "/icon.png",
+    "img/food-1.png",
     "/nav.html",
     "/index.html",
     "/manifest.json",

@@ -50,6 +50,11 @@ document.addEventListener("DOMContentLoaded", function() {
             var content = document.querySelector("#body-content");
             if (this.status == 200) {
               content.innerHTML = xhttp.responseText;
+
+              // Slider 
+              var elems = document.querySelectorAll('.slider');
+              var instances = M.Slider.init(elems);
+              
             } else if (this.status == 404) {
               content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
             } else {
@@ -59,6 +64,10 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         xhttp.open("GET", "pages/" + page + ".html", true);
         xhttp.send();
+
+        
       }
+
+     
 
 });
