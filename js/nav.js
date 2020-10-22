@@ -52,8 +52,23 @@ document.addEventListener("DOMContentLoaded", function() {
               content.innerHTML = xhttp.responseText;
 
               // Slider 
-              var elems = document.querySelectorAll('.slider');
-              var instances = M.Slider.init(elems);
+              const elems = document.querySelectorAll('.slider');
+              const instances = M.Slider.init(elems, {
+                indicators: false,
+                height : 400,
+                transition : 500,
+                interval : 6000
+              });
+
+              // Autocomplete
+              const ac = document.querySelector(".autocomplete");
+              M.Autocomplete.init(ac, {
+                data : {
+                  "Mulan" : null,
+                  "Avatar" : null,
+                  "My Hero Academia: Heroes Rising" : null,
+                }
+              })
               
             } else if (this.status == 404) {
               content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
